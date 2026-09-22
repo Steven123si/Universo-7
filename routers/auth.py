@@ -45,8 +45,9 @@ def login(credenciales: UsuarioLogin):
             detail="Credenciales incorrectas"
         )
 
+    #  Convertir usuario["id"] a string -> str(usuario["id"])
     token = crear_token_acceso({
-        "sub": usuario["id"],
+        "sub": str(usuario["id"]),
         "email": usuario["email"],
         "rol": usuario["rol"]
     })

@@ -35,7 +35,7 @@ class PlanetaRespuesta(BaseModel):
 class RazaCrear(BaseModel):
     nombre: str
     fuerza_base: int
-    habilidad_especial: str
+    habilidad_especial: Optional[str] = "Ninguna"
     planeta_id: int
 
 class RazaRespuesta(BaseModel):

@@ -64,7 +64,6 @@ def sembrar_datos():
             ("Sama Kaioshin", "admin@dragonball.com", admin_pass, "admin")
         )
 
-        # Planetas iniciales (corregido: exactamente 2 valores para 2 '?')
         cursor.execute(
             "INSERT INTO planetas (nombre, galaxia) VALUES (?, ?)",
             ("Vejeta", "Galaxia del Norte")
